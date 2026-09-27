@@ -1,0 +1,81 @@
+/*
+Theme Name: Clickteam StartPane
+Theme URI: http://www.clickteam.com
+Description: Theme for the Fusion StartPane pages
+Version: 1.0
+Author: Simon Pittock
+Author URI: http://www.clickteam.com
+
+Tags: clickteam, startpane
+
+This theme is copyright Clickteam, 2015 and may not
+be used without express permission from Clickteam.
+*/
+
+html						{height: 100%;}
+body						{margin: 0px; padding: 0px; text-align: center; height: 100%; overflow-x: hidden;}
+.page						{margin: 0px; padding: 0px; text-align: center;}
+
+p							{margin: 0px; padding: 0px; color: red;}
+.soliloquy-container		{margin: 0px auto 20px auto !IMPORTANT;}
+.bannerBorder				{display: none; width: 100%; height: calc(100vw * 0.37); max-height: 350px; position: absolute; top: 0px; left: 0px; background: #000000;
+							background: linear-gradient(to right, #000000 0%,#2989d8 25%,#2989d8 75%,#000000 100%);
+							-pie-background: linear-gradient(right, #000000 0%,#2989d8 25%,#2989d8 75%,#000000 100%);
+							behavior: url(PIE.php);
+}
+.pageBorder					{width: 5px; height: 100%; position: fixed; top: 0px; left: 0px; background-image: url('gfx/cfshadow.png'); background-repeat: repeat-y; z-index: 999999;}
+
+#spWrapper					{max-width: 935px; margin: 0px auto; text-align: left; padding: 0px 10px; margin-bottom: 5px;}
+
+.ctBlueHead					{color: #8d8d8d; font-family: "Trebuchet MS",Arial,Helvetica,sans-serif; font-size: 24px; font-weight: bold; padding-bottom: 10px;}
+.ctBlueHead>:first-child	{color: #3399cc;}
+
+#spLinksPane				{background-color: FFFFEE; float: left; width: 250px; text-align: left; padding-right: 10px; margin-bottom: 0px;}
+#spLinksPane>div			{margin: 0px 0px 15px 0px;}
+#spLinksPane>div>h3			{margin: 0px 0px 7px 0px; color: #8d8d8d; font-family: "Trebuchet MS",Arial,Helvetica,sans-serif; font-size: 18px; font-weight: bold;}
+#spLinksPane>div>ul			{margin: 0px; padding: 0px 0px 0px 15px; color: #1A1A1A;}
+#spLinksPane>div>ul>li		{font-size: 14px;}
+#spLinksPane>div>ul>li>a	{color: #3399cc; text-decoration: none; font-family: "Trebuchet MS",Arial,Helvetica,sans-serif; font-size: 14px;}
+
+#spPageContent				{width: calc(935px - 250px); padding-left: 250px;}
+#spButtonBox				{width: 935px; text-align: left; margin-bottom: 20px;}
+#spButtonBox>:first-child	{margin-left: 0px;}
+#spButtonBox>:last-child	{margin-right: 0px;}
+#spButtonBox>a				{margin: 0px 3.5px;}
+#spButtonBox>a>img			{border: 0px; width: 129px; height: 55px;}
+
+/** RSS FEED **/
+a.csRSSItem 				{background-color: white;
+						    border: 5px solid #1d1d1d;
+						    border-radius: 2px;
+						    box-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+							display: inline-block;
+						    position: relative;
+						    text-align: center;
+						    width: 30.5%;
+						    width: 209px;
+						    height: calc(((100vw-250px)*30.5%) * 0.68);
+						    height: 142px;
+						    
+						    behavior: url(PIE.php);
+}
+img.csRSSItem				{border: 0px; width: 209px; height: 142px;}
+div.csRSSItemTitle			{background-color: #1d1d1d;
+						    bottom: 0;
+						    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif; 
+						    color: #8d8d8d;
+						    font-size: 11px;
+						    padding: 1px 2px 3px 2px;
+						    position: absolute;
+						    width: 205px;
+}
+div.csRSSBox				{text-align: center; margin-bottom: 20px;}
+div.csRSSBox>:first-child	{float: left;}
+div.csRSSBox>:last-child	{float: right;}
+
+div.spFooter				{position: block; bottom: 0px; width: 935px; height: 20px; line-height: 28px; font-family: "Trebuchet MS",Arial,Helvetica,sans-serif; font-size: 10px; margin-bottom: 5px; overflow: hidden;}
+#spFooterIcons				{float: right;}
+#spFooterIcons>a			{}
+#spFooterIcons>a>img		{border: 0px; vertical-align: top; margin-left: 2px;}
+
+.ctspPopupClass	img			{top: 0px !important; left: 0px !important;}
